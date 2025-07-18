@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva Derecho</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Curricular Derecho</h1>
 
+  <div class="semestre">
+    <h2>1° semestre</h2>
+    <div class="ramo" data-id="1">Introducción al Derecho</div>
+    <div class="ramo" data-id="2">Historia del Derecho</div>
+  </div>
+
+  <div class="semestre">
+    <h2>2° semestre</h2>
+    <div class="ramo prereq" data-id="3" data-prereq="1">Derecho Civil I</div>
+    <div class="ramo prereq" data-id="4" data-prereq="2">Derecho Romano</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
